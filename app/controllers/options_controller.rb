@@ -1,17 +1,6 @@
 class OptionsController < ApplicationController
   before_action :set_option, only: [:show, :edit, :update, :destroy]
 
-  # GET /options
-  # GET /options.json
-  def index
-    @options = Option.all
-  end
-
-  # GET /options/1
-  # GET /options/1.json
-  def show
-  end
-
   # GET /options/new
   def new
     @option = Option.new
